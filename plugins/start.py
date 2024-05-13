@@ -1,4 +1,4 @@
-#Credit @Codeflix_bots
+#Credit @hmmedia_bots
 
 import asyncio
 import base64
@@ -128,7 +128,7 @@ async def start_command(client: Client, message: Message):
                 except:
                     pass
 
-            SD = await message.reply_text("Baka! Files will be deleted After 600 seconds. Save them to the Saved Message now!")
+            SD = await message.reply_text("ATTENTION! Files will be deleted After 600 seconds. Save them to the Saved Message now!")
             await asyncio.sleep(SECONDS)
 
             for snt_msg in snt_msgs:
@@ -160,8 +160,8 @@ async def start_command(client: Client, message: Message):
         else:
             verify_status = await get_verify_status(id)
             if IS_VERIFY and not verify_status['is_verified']:
-                short_url = f"api.shareus.io"
-                TUT_VID = f"https://t.me/How_to_Download_7x/32"
+                short_url = f"api.shrinkforearn.in"
+                TUT_VID = f"https://youtube.com/shorts/drCJLujy8R0?si=i2QPmXcoUEACNTT5"
                 token = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
                 await update_verify_status(id, verify_token=token, link="")
                 link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API,f'https://telegram.dog/{client.username}?start=verify_{token}')
