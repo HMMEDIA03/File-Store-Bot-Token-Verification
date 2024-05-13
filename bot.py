@@ -1,4 +1,4 @@
-#(©)codeflix_bots
+#(©)hmmedia_bots
 
 from aiohttp import web
 from plugins import web_server
@@ -55,11 +55,11 @@ class Bot(Client):
             sys.exit()
 
         self.set_parse_mode(ParseMode.HTML)
-        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \nhttps://t.me/codeflix_bots")
+        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \nhttps://t.me/hmmedia_bots")
         self.LOGGER(__name__).info(f""" \n\n       
                                                   
                                                   
-BOT DEPLOYED BY  @CODEFLIX_BOTS                        
+BOT DEPLOYED BY  @HMMEDIA_BOTS                        
 
                                           """)
         self.username = usr_bot_me.username
